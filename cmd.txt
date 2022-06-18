@@ -21,3 +21,93 @@ git add:
 
 git config:
 	five u the congif file of git
+
+git status:
+ 	to see which file is tracked or not and stuff
+
+git push:
+ git push -u -f origin "branch name"
+
+note: use ssh insread of http..for ssh create new key first 
+ssh keygen -t rsa
+then
+cat path to ur file i.e key
+then copy tht key and add it to guthub settings->new ssh key
+try connecting with giy hub
+ssh -T github
+
+git clone:
+
+	as name suggests clone the repo 
+	git clone  repo-url
+for particular path
+ git clone repo-url  "path"
+
+to clone branch
+ git clone -b branch__name url
+
+
+
+git ignore:
+ ignore the file like logs and stuff 
+ no particular comand like git instead we create a .gitignore file and put the ignored fiels name here
+
+git fork:
+ use to access someone project to build your own or to contribute to exsting one
+
+git repo:
+ folfer on github or local machine which has git files in simple
+
+git index:
+ staging area
+
+git log:
+ gave you the details of all the commits and actions like a history
+ $ git log --oneline : give all output of commit in 1 line
+
+git diff:
+ to see changes in files
+ git diff --color-words higlihts only modifies data
+ 
+
+git branch:
+	git branch : show all branches
+	git branch "B_Name " crate new branch with tht name
+	git branch -d b_name : del tht branch
+	git branch -D b_name : froces del it evn if iy has unmerged changes
+	git branch -a:  list all remote branch
+	git bramch -m b_name: renmae of the branch
+	
+git checkout:
+	change branch
+
+
+git merge :
+	merge two branches
+
+
+git cherrypick:
+	used to move changes from onr branch to another branch without merging the two of em
+
+	git cherry-pick commitID
+to check commit id use git log
+
+git reset:
+	used to reset or to undo all changes and return to the checkpoint which is commit i mean the to a commit point  you want to reset 
+
+	git reset commithash ..tht look like tht is: 9a9add8
+
+note - you can also undo the reset if you know the commithash but we careful you cant see the resetted commit hash using git log
+
+
+git revert :
+	like undo but not really bcz it doesnt del anything ..it made changes over the cuurent file ..wronh choice if  u wanna del the history of the thing u wanna use undo/revert on
+
+git head:
+ mostlty tell us about the newest commit
+
+	git show head
+
+detached head when head dont point towards recent commit
+use to see previous commits
+git checkout commitID	 
