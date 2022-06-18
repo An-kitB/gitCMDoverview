@@ -4,6 +4,8 @@ installation:
 
 setting up git:
  git config --global user.name "name" 
+`
+
  git config --global user.email "mail"
 
 to see it type : git config --list
@@ -13,3 +15,9 @@ git init:
  use to make dir into git dir
  git init or git init NewDir later will create a git dir of name NewDir
 
+git add:
+ use to add filr to satging area for thm to get comiited 
+ git add -A where A mean add all
+
+git config:
+	five u the congif file of git
